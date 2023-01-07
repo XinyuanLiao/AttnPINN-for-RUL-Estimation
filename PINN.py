@@ -65,9 +65,6 @@ class PINN:
     def __init__(self, X, RUL, X_test, RUL_test, hidden_dim, derivatives_order, lr, batch_size, coef):
         self.X = torch.tensor(X[0:49072, :], dtype=torch.float32).to(device)
         self.RUL = torch.tensor(RUL[0:49072], dtype=torch.float32).to(device)
-        # self.X_valid = X[49072:, :]
-        # self.RUL_valid = RUL[49072:]
-        # self.valid_process()
         self.X_valid = torch.tensor(X[49072:, :], dtype=torch.float32).to(device)
         self.RUL_valid = torch.tensor(RUL[49072:], dtype=torch.float32).to(device)
         self.X_test = torch.tensor(X_test, dtype=torch.float32).to(device)
@@ -94,16 +91,6 @@ class PINN:
         torchsummary.summary(self.drn, (1, self.X.shape[1] - 1))
         torchsummary.summary(self.mlp, (1, self.hidden_dim + 1))
         torchsummary.summary(self.hnn, (1, self.input_dim))
-
-    def valid_process(self):
-        xu = np.hstack((self.X_valid, self.RUL_valid.reshape(-1, 1)))
-        ret = []
-        for data in xu:
-            if data[-1] < 125:
-                ret.append(data)
-        ret = np.array(ret)
-        self.X_valid = torch.tensor(ret[:, 0:-1], dtype=torch.float32).to(device)
-        self.RUL_valid = torch.tensor(ret[:, -1], dtype=torch.float32).to(device)
 
     # 评估分数函数
     def Score(self, pred, true):
