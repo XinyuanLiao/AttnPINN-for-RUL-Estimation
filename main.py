@@ -19,7 +19,7 @@ def seed_torch(seed=1234):
 
 if __name__ == '__main__':
     seed_torch()
-    d = dp.CMAPSSDataset('C-MAPSS-Data')
+    d = dp.CMAPSSDataset('C-MAPSS')
     u, x, t = d.get_train_data()
     x = np.hstack((x, t))
     u_test, x_test, t_test = d.get_test_data()
