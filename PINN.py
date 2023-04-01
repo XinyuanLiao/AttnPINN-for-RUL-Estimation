@@ -1,7 +1,6 @@
 import os
 import Plotter_Helper as ph
 import matplotlib.pyplot as plt
-import torchvision.models
 import torchsummary
 import numpy as np
 import torch.nn as nn
@@ -29,7 +28,6 @@ class xNN(nn.Module):
 
     def forward(self, X):
         x, weight = self.multihead_attn(X, X, X)
-        # x = self.activation(self.Dense0(X))
         x = self.LN(x + X)
         x1 = self.Dense1(x)
         x1 = self.activation(x1 + x)
@@ -43,7 +41,6 @@ class DeepHPM(nn.Module):
         self.hidden_dim = hidden_dim
         self.features = input_dim
         self.multihead_attn = nn.MultiheadAttention(self.features, 1)  # self-Attention layer
-        # self.Dense0 = nn.Linear(self.features, self.features)
         self.Dense1 = nn.Linear(self.features, self.features)
         self.Dense2 = nn.Linear(self.features, self.hidden_dim)
         self.LN = nn.LayerNorm(self.features)
@@ -51,7 +48,6 @@ class DeepHPM(nn.Module):
 
     def forward(self, X):
         x, weight = self.multihead_attn(X, X, X)
-        # x = self.activation(self.Dense0(X))
         x = self.LN(x + X)
         x1 = self.Dense1(x)
         x1 = self.activation(x1 + x)
@@ -62,7 +58,6 @@ class MLP(nn.Module):
     def __init__(self, input_dim):
         super(MLP, self).__init__()
         self.features = input_dim
-        # self.params = torch.tensor([0.1667, 0.1667, 0.1667, 0.1667, 0.1667, 0.1667], dtype=torch.float32).to(device)
         params = torch.ones(6)
         params = torch.full_like(params, 10, requires_grad=True)
         self.params = nn.Parameter(params)
@@ -79,23 +74,22 @@ class MLP(nn.Module):
             nn.Tanh(),
             nn.Linear(10, 6)
         )
-        # self.dense = nn.Linear(6, 1)
 
     def forward(self, X):
         x = self.dnn(X)
         x = x * self.params
         return x.sum(dim=1)
-        # return self.dense(x)
 
 
 class PINN:
-    def __init__(self, X, RUL, X_test, RUL_test, hidden_dim, derivatives_order, lr, batch_size, coef):
+    def __init__(self, X, RUL, fau, X_test, RUL_test, hidden_dim, derivatives_order, lr, batch_size, coef):
         self.X = torch.tensor(X[0:49072, :], dtype=torch.float32).to(device)
         self.RUL = torch.tensor(RUL[0:49072], dtype=torch.float32).to(device)
         self.X_valid = torch.tensor(X[49072:, :], dtype=torch.float32).to(device)
         self.RUL_valid = torch.tensor(RUL[49072:], dtype=torch.float32).to(device)
         self.X_test = torch.tensor(X_test, dtype=torch.float32).to(device)
         self.RUL_test = torch.tensor(RUL_test, dtype=torch.float32).to(device)
+        self.fau = fau
 
         self.hidden_dim = hidden_dim
         self.order = derivatives_order
@@ -200,7 +194,6 @@ class PINN:
                 if epoch == 0 and step == 0:
                     self.l0 = losses
                 self.l1 = losses
-                # loss = loss1
                 self.optim.zero_grad()
                 loss.backward()
                 self.optim.step()
@@ -282,3 +275,11 @@ class PINN:
         self.mlp.load_state_dict(torch.load('./Result/MLP.pth'))
         pred, h = self.net_u(self.X_test[:, 0:-1], self.X_test[:, -1].reshape(-1, 1))
         ph.Plot3D(hidden_state=h.cpu().detach().numpy(), RUL=pred.cpu().detach().numpy())
+
+    def plot_Fa(self):
+        self.xnn.load_state_dict(torch.load('./Result/xNN.pth'))
+        self.mlp.load_state_dict(torch.load('./Result/MLP.pth'))
+        x = self.X[0:20000, 0:-1]
+        t = self.X[0:20000, -1].reshape(-1, 1)
+        u, h = self.net_u(x, t)
+        ph.PlotFailure(hidden_state=h.cpu().detach().numpy(), fau=self.fau[0:20000])
