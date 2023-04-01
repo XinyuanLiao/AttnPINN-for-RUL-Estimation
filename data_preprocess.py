@@ -34,8 +34,6 @@ class CMAPSSDataset:
         for data in self.train_data:
             index = int(data[0])
             data[1] = self.train_rul[index - 1] - data[1]
-            self.train_array[index - 1].append(data)
-        self.train_array = np.array(self.train_array)
 
         # Process the test data
         self.test_data = np.loadtxt(self.path + '/test.txt')
@@ -69,6 +67,24 @@ class CMAPSSDataset:
         oc = data_nomalization(oc)
         return oc
 
+    def get_train_failure(self):
+        u, train, t = self.get_train_data()
+        index = self.get_train_id()
+        for i in range(train.shape[0]):
+            self.train_array[int(index[i] - 1)].append(train[i])
+        failure = np.zeros((train.shape[0]))
+        k = 0
+        self.train_array = np.array(self.train_array)
+        for i in range(self.train_array.shape[0]):
+            self.train_array[i] = np.array(self.train_array[i])
+            if self.train_array[i][-1, 10] > self.train_array[i][0, 10]:
+                for j in range(self.train_array[i].shape[0]):
+                    failure[k] = 1
+                    k += 1
+            else:
+                k += self.train_array[i].shape[0]
+        return failure
+
     def get_train_data(self):
         oc = self.get_train_oc()
         u = self.train_data[:, 1]
@@ -78,7 +94,6 @@ class CMAPSSDataset:
                 u[i] = self.start
         train = self.train_data[:, self.valid_monitor]
         train, self.means, self.stds = normal_train(oc, train)
-        # train = data_nomalization(train)
         id = self.get_train_id()
         t_array = [[] for i in range(self.train_engine_size)]
         u_array = [[] for i in range(self.train_engine_size)]
@@ -122,7 +137,6 @@ class CMAPSSDataset:
             if rul[i] >= self.start:
                 rul[i] = self.start
         data = normal_test(oc, data, self.means, self.stds)
-        # data = data_nomalization(data)
         id = self.get_test_id()
         t_array = [[] for i in range(self.test_engine_size)]
         rul_array = [[] for i in range(self.test_engine_size)]
