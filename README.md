@@ -18,7 +18,7 @@ pip install scikit_learn==1.0.2
 pip install torch==1.11.0
 pip install torchsummary==1.5.1
 ```
-Or:stuck_out_tongue::
+or:stuck_out_tongue::
 ```
 pip install -r requirements.txt
 ```
