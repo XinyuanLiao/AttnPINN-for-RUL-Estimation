@@ -18,3 +18,8 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
 AttnPINN[(proposed framwork)]()|18.58|2019|1,030
 # Citation
+## Requirement
+* Python 3.4
+* request
+* urllib
+
