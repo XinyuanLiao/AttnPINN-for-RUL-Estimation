@@ -3,7 +3,7 @@ This repository includes the code and data for the paper "_**A Framework for Rem
 ## Abstract
 Prognostics and health management (PHM), as an important technique that can timely make maintenance plans for important equipment and reduce maintenance costs, has attracted more and more attention. Remaining useful life (RUL) prediction as the key of PHM has also been more and more researched. The current mainstream RUL prediction method is data-driven. However, the large number of model parameters, low prediction accuracy, and lack of interpretability of prediction results are common problems of current data-driven methods. Due to the outstanding advantages of the Self-Attention mechanism in reducing the amount of parameters and learning the potential distribution of data and the good effect of the Physics-Informed Neural Networks (PINNs) in improving the prediction accuracy of the network, this paper introduces the Self-Attention mechanism and PINNs in RUL prediction to achieve fewer parameters, higher prediction accuracy and better interpretation of prediction results. The RUL prediction framework based on the Self-Attention mechanism and PINNs called AttnPINN proposed in this paper has verified its superiority on the Commercial Modular AeroPropulsion System Simulation (C-MAPSS) dataset.
 
-## Requirement
+## Requirements
 * matplotlib==3.3.2
 * numpy==1.21.6
 * scikit_learn==1.0.2
@@ -18,7 +18,7 @@ pip install scikit_learn==1.0.2
 pip install torch==1.11.0
 pip install torchsummary==1.5.1
 ```
-or:stuck_out_tongue::
+or use this:stuck_out_tongue::
 ```
 pip install -r requirements.txt
 ```
@@ -29,7 +29,7 @@ python main.py
 ```
 In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py), it includes training, predicting and drawing functions.
 
-:sunglasses:By default, the function to compute the RMSE loss for test set predictions and the function to draw the predict values and the true values are included.
+:sunglasses: By default, only predicting function is run.
 
 ## Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
