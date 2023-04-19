@@ -17,4 +17,4 @@ Double attention-Transformer(Liu et al., 2022)|19.86|1741|N/A
 e-RULENet(Natsumeda, 2022)|20.80|1554|32.3K
 PDE-PHM(Cofre-Martel et al., 2021)|25.58|N/A|1,066
 AttnPINN(proposed framwork)|18.58|2019|1,030
-# Cited
+# Citation
