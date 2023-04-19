@@ -10,7 +10,7 @@ Prognostics and health management (PHM), as an important technique that can time
 * torch==1.11.0
 * torchsummary==1.5.1
 ## Install environments
-If you want to install the required environments one by one, you can copy the following code:thinking::
+If you want to install the required environments one by one:thinking:, you can copy the following codes:
 ```
 pip install matplotlib==3.3.2
 pip install numpy==1.21.6
