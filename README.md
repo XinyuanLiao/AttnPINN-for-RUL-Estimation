@@ -18,7 +18,7 @@ pip install scikit_learn==1.0.2
 pip install torch==1.11.0
 pip install torchsummary==1.5.1
 ```
-or:
+Or:
 ```
 pip install -r requirements.txt
 ```
