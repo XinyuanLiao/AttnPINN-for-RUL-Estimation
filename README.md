@@ -24,15 +24,12 @@ AttnPINN[(proposed framwork)]()|18.58|2019|1,030
 * scikit_learn==1.0.2
 * torch==1.11.0
 * torchsummary==1.5.1
-## Install
+## Install Environment
 ```
 pip install -r requirements.txt
-
 ```
 ## Run
 ```
-
 python main.py
-
 ```
 
