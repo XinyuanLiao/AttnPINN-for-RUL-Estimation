@@ -5,8 +5,8 @@ Prognostics and health management (PHM), as an important technique that can time
 # Framework
 ![image](https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/frame.png)
 # Experiment Result
-![image](https://github.com/lexsaints/powershell/blob/master/IMG/ps2.png)
-![image](https://github.com/lexsaints/powershell/blob/master/IMG/ps2.png)
+![image](https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/train.png)
+![image](https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/failure.png)
 # Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
 |-|-|-|-|
