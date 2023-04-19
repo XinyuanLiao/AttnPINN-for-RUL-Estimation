@@ -9,7 +9,7 @@ Prognostics and health management (PHM), as an important technique that can time
 * scikit_learn==1.0.2
 * torch==1.11.0
 * torchsummary==1.5.1
-## Install Environment
+## Install environment
 If you want to install the required environments one by one, you can copy the following code:
 ```
 pip install matplotlib==3.3.2
@@ -23,6 +23,7 @@ Or:
 pip install -r requirements.txt
 ```
 ## Run
+Use the following code:
 ```
 python main.py
 ```
