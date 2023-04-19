@@ -25,10 +25,20 @@ AttnPINN[(proposed framwork)]()|18.58|2019|1,030
 * torch==1.11.0
 * torchsummary==1.5.1
 ## Install Environment
+If you want to install the required environments one by one, you can copy the following code:
+```
+pip install matplotlib==3.3.2
+pip install numpy==1.21.6
+pip install scikit_learn==1.0.2
+pip install torch==1.11.0
+pip install torchsummary==1.5.1
+```
+or:
 ```
 pip install -r requirements.txt
 ```
 ## Run
+In main.py, it contains the functions of training, prediction, drawing prediction diagrams of all test units, drawing training set, verification set, distribution diagram of test set in hidden state space, and drawing failure mode diagram of training set. By default only functions to compute RMSE loss values for test set predictions are included.
 ```
 python main.py
 ```
