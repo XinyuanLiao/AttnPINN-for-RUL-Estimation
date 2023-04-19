@@ -19,7 +19,8 @@ PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/99
 AttnPINN[(proposed framwork)]()|18.58|2019|1,030
 ## Citation
 ## Requirement
-* Python 3.4
-* request
-* urllib
-
+* matplotlib==3.3.2
+* numpy==1.21.6
+* scikit_learn==1.0.2
+* torch==1.11.0
+* torchsummary==1.5.1
