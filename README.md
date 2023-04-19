@@ -10,7 +10,7 @@ Prognostics and health management (PHM), as an important technique that can time
 * torch==1.11.0
 * torchsummary==1.5.1
 ## Install environments
-If you want to install the required environments one by one, you can copy the following code:
+If you want to install the required environments one by one, you can copy the following code:thinking::
 ```
 pip install matplotlib==3.3.2
 pip install numpy==1.21.6
@@ -18,7 +18,7 @@ pip install scikit_learn==1.0.2
 pip install torch==1.11.0
 pip install torchsummary==1.5.1
 ```
-Or:
+Or:stuck_out_tongue::
 ```
 pip install -r requirements.txt
 ```
@@ -28,7 +28,8 @@ Use the following code:
 python main.py
 ```
 In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py), it includes training, forecasting and drawing the prediction diagram of all test units, drawing the whole life cycle prediction diagram of a certain engine, drawing the training set, the verification set, the distribution diagram of the test set in the hidden state space and drawing the training set Function of the failure mode map. 
-By default only functions to compute RMSE loss values for test set predictions are included.
+
+:sunglasses:By default only functions to compute RMSE loss values for test set predictions are included.
 
 ## Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
