@@ -29,7 +29,7 @@ python main.py
 ```
 In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py), it includes training, forecasting and drawing the prediction diagram of all test units, drawing the whole life cycle prediction diagram of a certain engine, drawing the training set, the verification set, the distribution diagram of the test set in the hidden state space and drawing the training set Function of the failure mode map. 
 
-:sunglasses:By default only functions to compute RMSE loss values for test set predictions are included.
+:sunglasses:By default only the function to compute RMSE loss values for test set predictions is included.
 
 ## Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
