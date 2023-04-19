@@ -25,15 +25,14 @@ AttnPINN[(proposed framwork)]()|18.58|2019|1,030
 * torch==1.11.0
 * torchsummary==1.5.1
 ## Install
-'''
-
+```
 pip install -r requirements.txt
 
-'''
+```
 ## Run
-'''
+```
 
 python main.py
 
-'''
+```
 
