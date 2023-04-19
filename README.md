@@ -9,12 +9,12 @@ Prognostics and health management (PHM), as an important technique that can time
 # Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
 |-|-|-|-|
-|DCNN(Li et al., 2018)|23.31|12466|72.7K|
-RNN-Autoencoder(Yu et al.. 2020)|22.15|2901|378.0K
-GCU-Transformer(Mo et al.,2021)|24.86|N/A|399.7K
-MCLSTM(Sheng et al., 2021)|23.81|4826|N/A
-Double attention-Transformer(Liu et al., 2022)|19.86|1741|N/A
-e-RULENet(Natsumeda, 2022)|20.80|1554|32.3K
-PDE-PHM(Cofre-Martel et al., 2021)|25.58|N/A|1,066
-AttnPINN(proposed framwork)|18.58|2019|1,030
+|DCNN[(Li et al., 2018)]()|23.31|12466|72.7K|
+RNN-Autoencoder[(Yu et al.. 2020)]()|22.15|2901|378.0K
+GCU-Transformer[(Mo et al.,2021)]()|24.86|N/A|399.7K
+MCLSTM[(Sheng et al., 2021)]()|23.81|4826|N/A
+Double attention-Transformer[(Liu et al., 2022)]()|19.86|1741|N/A
+e-RULENet[(Natsumeda, 2022)]()|20.80|1554|32.3K
+PDE-PHM[(Cofre-Martel et al., 2021)]()|25.58|N/A|1,066
+[AttnPINN(proposed framwork)]()|18.58|2019|1,030
 # Citation
