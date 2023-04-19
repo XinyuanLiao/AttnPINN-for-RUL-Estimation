@@ -3,11 +3,9 @@ A Framework for Remaining Useful Life Prediction Based on Self-Attention and Phy
 # Abstract
 Prognostics and health management (PHM), as an important technique that can timely make maintenance plans for important equipment and reduce maintenance costs, has attracted more and more attention. Remaining useful life (RUL) prediction as the key of PHM has also been more and more researched. The current mainstream RUL prediction method is data-driven. However, the large number of model parameters, low prediction accuracy, and lack of interpretability of prediction results are common problems of current data-driven methods. Due to the outstanding advantages of the Self-Attention mechanism in reducing the amount of parameters and learning the potential connection of data and the good effect of the Physics-Informed Neural Networks (PINNs) in improving the prediction accuracy of the network, this paper introduces the Self-Attention mechanism and PINNs in RUL prediction to achieve fewer parameters, higher prediction accuracy and better interpretation of prediction results. The RUL prediction framework based on the Self-Attention mechanism and PINNs called AttnPINN proposed in this paper has verified its superiority on the Commercial Modular AeroPropulsion System Simulation (C-MAPSS) dataset.
 # Framework
-<div align=center>
 <img src="https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/frame.png"/>
-</div>
 # Experiment Result
-<img src="https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/train.png",style="zoom:50%"/><img src="https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/failure.png",style="zoom:50%"/>
+<img src="https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/train.png"style="zoom:50%"><img src="https://github.com/XinyuanLiao/AttnPINN-for-RUL-estimation/blob/main/Figure/failure.png"style="zoom:50%">
 # Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
 |-|-|-|-|
