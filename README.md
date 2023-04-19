@@ -23,7 +23,7 @@ Or:stuck_out_tongue::
 pip install -r requirements.txt
 ```
 ## Run
-Use the following code:
+Running the project with the following code:
 ```
 python main.py
 ```
