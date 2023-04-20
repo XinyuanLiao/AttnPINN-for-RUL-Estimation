@@ -107,6 +107,10 @@ Test_RMSE: 18.37,   Score: 2058.5
 
 If you want to train the model by yourself:hammer::hammer:, you can uncomment the train function in _**[main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py)**_.
 
+```
+#pinn.train(1000) =>pinn.train(1000)
+```
+
 And then, the output will be:
 
 ```
