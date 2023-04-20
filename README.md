@@ -1,6 +1,8 @@
 # AttnPINN-for-RUL-Estimation
 This repository includes the code and data for the paper "_**A Framework for Remaining Useful Life Prediction Based on Self-Attention and Physics-Informed Neural Networks**_"
 
+[![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
+
 ![SourceForge Platform](https://img.shields.io/sourceforge/platform/python?color=python&label=python&logo=python)
 
 ![GitHub watchers](https://img.shields.io/github/watchers/XinyuanLiao/AttnPINN-for-RUL-Estimation?style=social)
