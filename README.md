@@ -33,6 +33,72 @@ In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/mai
 
 :sunglasses: By default, only predicting function will run.
 
+The output will be:
+
+```
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+MultiheadAttention-1  [[-1, 1, 14], [-1, 2, 2]]               0
+         LayerNorm-2                [-1, 1, 14]              28
+            Linear-3                [-1, 1, 14]             210
+              ReLU-4                [-1, 1, 14]               0
+            Linear-5                 [-1, 1, 3]              45
+================================================================
+Total params: 283
+Trainable params: 283
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.00
+----------------------------------------------------------------
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Linear-1                [-1, 1, 10]              50
+              Tanh-2                [-1, 1, 10]               0
+            Linear-3                [-1, 1, 10]             110
+              Tanh-4                [-1, 1, 10]               0
+            Linear-5                [-1, 1, 10]             110
+              Tanh-6                [-1, 1, 10]               0
+            Linear-7                [-1, 1, 10]             110
+              Tanh-8                [-1, 1, 10]               0
+            Linear-9                [-1, 1, 10]             110
+             Tanh-10                [-1, 1, 10]               0
+           Linear-11                 [-1, 1, 6]              66
+================================================================
+Total params: 556
+Trainable params: 556
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.00
+----------------------------------------------------------------
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+MultiheadAttention-1  [[-1, 1, 10], [-1, 2, 2]]               0
+         LayerNorm-2                [-1, 1, 10]              20
+            Linear-3                [-1, 1, 10]             110
+              ReLU-4                [-1, 1, 10]               0
+            Linear-5                 [-1, 1, 1]              11
+================================================================
+Total params: 141
+Trainable params: 141
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.00
+----------------------------------------------------------------
+Test_RMSE: 18.37,   Score: 2058.5
+```
+
 ## Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
 |-|-|-|-|
