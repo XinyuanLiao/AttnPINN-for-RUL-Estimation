@@ -20,7 +20,6 @@ class xNN(nn.Module):
         self.hidden_dim = hidden_dim
         self.features = input_dim
         self.multihead_attn = nn.MultiheadAttention(self.features, 1)  # self-Attention layer
-        # self.Dense0 = nn.Linear(self.features, self.features)
         self.Dense1 = nn.Linear(self.features, self.features)
         self.Dense2 = nn.Linear(self.features, self.hidden_dim)
         self.LN = nn.LayerNorm(self.features)
@@ -199,7 +198,7 @@ class PINN:
                 self.optim.step()
             rul_valid, h_valid = self.net_u(self.X_valid[:, 0:-1], self.X_valid[:, -1].reshape(-1, 1))
             valid_loss = MSE(rul_valid, self.RUL_valid)
-            if epoch % 10 == 0:
+            if epoch % 1 == 0:
                 print(
                     'It: %d,   Valid_RUL_RMSE: %.2f' %
                     (
