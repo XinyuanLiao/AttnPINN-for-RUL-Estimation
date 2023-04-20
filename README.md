@@ -22,7 +22,7 @@ or use this:stuck_out_tongue::
 ```
 pip install -r requirements.txt
 ```
-## Run
+## Test
 Running the project with the following code:
 ```
 python main.py
