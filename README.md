@@ -33,7 +33,9 @@ In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/mai
 
 :sunglasses: By default, only predicting function will run.
 
-The output will be:
+## Output
+
+By default, the output will be:
 
 ```
 ----------------------------------------------------------------
@@ -97,6 +99,24 @@ Params size (MB): 0.00
 Estimated Total Size (MB): 0.00
 ----------------------------------------------------------------
 Test_RMSE: 18.37,   Score: 2058.5
+```
+
+If you want to train the model by yourself, you can uncomment the train function in [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py).
+
+And then, the output will be:
+
+```
+It: 0,   Valid_RUL_RMSE: 100.92
+It: 1,   Valid_RUL_RMSE: 99.87
+It: 2,   Valid_RUL_RMSE: 40.89
+It: 3,   Valid_RUL_RMSE: 40.76
+It: 4,   Valid_RUL_RMSE: 40.74
+It: 5,   Valid_RUL_RMSE: 40.74
+It: 6,   Valid_RUL_RMSE: 35.48
+It: 7,   Valid_RUL_RMSE: 20.47
+It: 8,   Valid_RUL_RMSE: 18.70
+It: 9,   Valid_RUL_RMSE: 18.27
+···
 ```
 
 ## Comparisons with state-of-the-art methods
