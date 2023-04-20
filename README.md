@@ -29,7 +29,7 @@ python main.py
 ```
 In [main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py), it includes training, predicting and drawing functions.
 
-:sunglasses: By default, only predicting function is run.
+:sunglasses: By default, only predicting function will run.
 
 ## Comparisons with state-of-the-art methods
 |Method|RMSE|Score|Parameters|
