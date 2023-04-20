@@ -1,13 +1,13 @@
 # AttnPINN-for-RUL-Estimation
 This repository includes the code and data for the paper "_**A Framework for Remaining Useful Life Prediction Based on Self-Attention and Physics-Informed Neural Networks**_"
 
-[![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
+![](https://img.shields.io/badge/Language-python-red.svg)
+![](https://img.shields.io/badge/Framework-pytorch-red.svg)
+![GitHub all releases](https://img.shields.io/github/downloads/XinyuanLiao/AttnPINN-for-RUL-Estimation/totale)
 
 ![SourceForge Platform](https://img.shields.io/sourceforge/platform/python?color=python&label=python&logo=python)
 
-![GitHub watchers](https://img.shields.io/github/watchers/XinyuanLiao/AttnPINN-for-RUL-Estimation?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/XinyuanLiao/AttnPINN-for-RUL-Estimation?style=social)
-![GitHub all releases](https://img.shields.io/github/downloads/XinyuanLiao/AttnPINN-for-RUL-Estimation/total?style=social)
+
 ## Abstract
 _Prognostics and health management (PHM), as an important technique that can timely make maintenance plans for important equipment and reduce maintenance costs, has attracted more and more attention. Remaining useful life (RUL) prediction as the key of PHM has also been more and more researched. The current mainstream RUL prediction method is data-driven. However, the large number of model parameters, low prediction accuracy, and lack of interpretability of prediction results are common problems of current data-driven methods. Physics-Informed Neural Networks (PINNs) and Self-Attention mechanism, an algorithm that can effectively learn the interactions and differences between features, are introduced in this paper for RUL prediction, achieving fewer parameters, higher prediction accuracy, and better interpretation of prediction results. The RUL prediction framework based on the Self-Attention mechanism and PINNs called AttnPINN proposed in this paper has verified its superiority on the Commercial Modular AeroPropulsion System Simulation (C-MAPSS) dataset._
 
@@ -141,3 +141,4 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
 AttnPINN[(proposed framwork)]()|**18.58**|2019|**986**
 ## Citation
+[![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
