@@ -11,7 +11,7 @@ Prognostics and health management (PHM), as an important technique that can time
 * scikit_learn==1.0.2
 * torch==1.11.0
 * torchsummary==1.5.1
-## Install environments
+## Install Environments
 If you want to install the required environments one by one:thinking:, you can copy the following codes:
 ```
 pip install matplotlib==3.3.2
@@ -119,7 +119,7 @@ It: 9,   Valid_RUL_RMSE: 18.27
 ···
 ```
 
-## Comparisons with state-of-the-art methods
+## Comparisons with State-of-the-art Methods
 |Method|RMSE|Score|Parameters|
 |-|-|-|-|
 |DCNN[(Li et al., 2018)](https://www.sciencedirect.com/science/article/pii/S0951832017307779)|23.31|12466|72.7K|
