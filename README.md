@@ -11,13 +11,13 @@ This repository includes the code and data for the paper "_**A Framework for Rem
 ## Abstract
 _Prognostics and health management (PHM), as an important technique that can timely make maintenance plans for important equipment and reduce maintenance costs, has attracted more and more attention. Remaining useful life (RUL) prediction as the key of PHM has also been more and more researched. The current mainstream RUL prediction method is data-driven. However, the large number of model parameters, low prediction accuracy, and lack of interpretability of prediction results are common problems of current data-driven methods. Physics-Informed Neural Networks (PINNs) and Self-Attention mechanism, an algorithm that can effectively learn the interactions and differences between features, are introduced in this paper for RUL prediction, achieving fewer parameters, higher prediction accuracy, and better interpretation of prediction results. The RUL prediction framework based on the Self-Attention mechanism and PINNs called AttnPINN proposed in this paper has verified its superiority on the Commercial Modular AeroPropulsion System Simulation (C-MAPSS) dataset._
 
-## Requirements
+## Configuration
 * matplotlib==3.3.2
 * numpy==1.21.6
 * scikit_learn==1.0.2
 * torch==1.11.0
 * torchsummary==1.5.1
-## Configuration
+
 If you want to install the required environments one by one:thinking:, you can copy the following codes:
 ```
 pip install matplotlib==3.3.2
