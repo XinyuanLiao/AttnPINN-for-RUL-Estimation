@@ -17,7 +17,7 @@ _Prognostics and health management (PHM), as an important technique that can tim
 * scikit_learn==1.0.2
 * torch==1.11.0
 * torchsummary==1.5.1
-## Install Environments
+## Configuration
 If you want to install the required environments one by one:thinking:, you can copy the following codes:
 ```
 pip install matplotlib==3.3.2
@@ -30,7 +30,7 @@ or use this:stuck_out_tongue::
 ```
 pip install -r requirements.txt
 ```
-## Test
+## Quick Start
 Running the project with the following code:
 ```
 python main.py
@@ -141,4 +141,5 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
 AttnPINN[(proposed framwork)]()|**18.58**|2019|**986**
 ## Citation
+If you find this work useful for your research, please cite:
 [![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
