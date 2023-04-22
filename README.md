@@ -18,7 +18,7 @@ _Prognostics and health management (PHM), as an important technique that can tim
 * torch==1.11.0
 * torchsummary==1.5.1
 
-If you want to install the required environments one by one:thinking:, you can copy the following codes:
+If you want to install the required environments one by one, you can copy the following codes:
 ```
 pip install matplotlib==3.3.2
 pip install numpy==1.21.6
@@ -26,7 +26,7 @@ pip install scikit_learn==1.0.2
 pip install torch==1.11.0
 pip install torchsummary==1.5.1
 ```
-or use this:stuck_out_tongue::
+or use this:
 ```
 pip install -r requirements.txt
 ```
@@ -37,7 +37,7 @@ python main.py
 ```
 In `main.py`, it includes training, predicting and drawing functions.
 
-:sunglasses: By default, only predicting function will run.
+ By default, only predicting function will run.
 
 ## Output
 
