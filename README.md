@@ -47,6 +47,44 @@ In `main.py`, it includes training, predicting and drawing functions.
 By default, the output will be:
 
 ```
+Test_RMSE: 18.37,   Score: 2058.5
+```
+
+If you want to train the model by yourself:hammer::hammer:, you can uncomment the train function in _**[main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py)**_.
+
+```
+#pinn.train(1000) => pinn.train(1000)
+```
+
+And then, the output will be:
+
+```
+It: 0,   Valid_RUL_RMSE: 100.92
+It: 1,   Valid_RUL_RMSE: 99.87
+It: 2,   Valid_RUL_RMSE: 40.89
+It: 3,   Valid_RUL_RMSE: 40.76
+It: 4,   Valid_RUL_RMSE: 40.74
+It: 5,   Valid_RUL_RMSE: 40.74
+It: 6,   Valid_RUL_RMSE: 35.48
+It: 7,   Valid_RUL_RMSE: 20.47
+It: 8,   Valid_RUL_RMSE: 18.70
+It: 9,   Valid_RUL_RMSE: 18.27
+···
+```
+
+## Comparisons with State-of-the-art Methods
+|Method|RMSE|Score|Parameters|
+|-|-|-|-|
+|DCNN[(Li et al., 2018)](https://www.sciencedirect.com/science/article/pii/S0951832017307779)|23.31|12466|72.7K|
+RNN-Autoencoder[(Yu et al.. 2020)](https://www.sciencedirect.com/science/article/pii/S0951832019307902)|22.15|2901|378.0K
+GCU-Transformer[(Mo et al.,2021)](https://link.springer.com/article/10.1007/s10845-021-01750-x)|24.86|N/A|399.7K
+MCLSTM[(Sheng et al., 2021)](https://www.sciencedirect.com/science/article/pii/S0951832021004439)|23.81|4826|N/A
+Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/science/article/pii/S0951832022000102)|19.86|1741|N/A
+e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|**1554**|32.3K
+PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
+AttnPINN[(proposed framwork)]()|**18.58**|2019|**986**
+## Parameters of Model
+```
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
@@ -107,42 +145,7 @@ Forward/backward pass size (MB): 0.00
 Params size (MB): 0.00
 Estimated Total Size (MB): 0.00
 ----------------------------------------------------------------
-Test_RMSE: 18.37,   Score: 2058.5
 ```
-
-If you want to train the model by yourself:hammer::hammer:, you can uncomment the train function in _**[main.py](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/blob/main/main.py)**_.
-
-```
-#pinn.train(1000) => pinn.train(1000)
-```
-
-And then, the output will be:
-
-```
-It: 0,   Valid_RUL_RMSE: 100.92
-It: 1,   Valid_RUL_RMSE: 99.87
-It: 2,   Valid_RUL_RMSE: 40.89
-It: 3,   Valid_RUL_RMSE: 40.76
-It: 4,   Valid_RUL_RMSE: 40.74
-It: 5,   Valid_RUL_RMSE: 40.74
-It: 6,   Valid_RUL_RMSE: 35.48
-It: 7,   Valid_RUL_RMSE: 20.47
-It: 8,   Valid_RUL_RMSE: 18.70
-It: 9,   Valid_RUL_RMSE: 18.27
-···
-```
-
-## Comparisons with State-of-the-art Methods
-|Method|RMSE|Score|Parameters|
-|-|-|-|-|
-|DCNN[(Li et al., 2018)](https://www.sciencedirect.com/science/article/pii/S0951832017307779)|23.31|12466|72.7K|
-RNN-Autoencoder[(Yu et al.. 2020)](https://www.sciencedirect.com/science/article/pii/S0951832019307902)|22.15|2901|378.0K
-GCU-Transformer[(Mo et al.,2021)](https://link.springer.com/article/10.1007/s10845-021-01750-x)|24.86|N/A|399.7K
-MCLSTM[(Sheng et al., 2021)](https://www.sciencedirect.com/science/article/pii/S0951832021004439)|23.81|4826|N/A
-Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/science/article/pii/S0951832022000102)|19.86|1741|N/A
-e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|**1554**|32.3K
-PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
-AttnPINN[(proposed framwork)]()|**18.58**|2019|**986**
 ## Citation
 If you find this work useful for your research, please cite:
 [![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
