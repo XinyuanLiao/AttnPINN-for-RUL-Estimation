@@ -40,11 +40,7 @@ python main.py
 ```
 In `main.py`, it includes training, predicting and drawing functions.
 
- By default, only predicting function will run.
-
-## Output
-
-By default, the output will be:
+ By default, only predicting function will run and the output will be:
 
 ```
 Test_RMSE: 18.37,   Score: 2058.5
