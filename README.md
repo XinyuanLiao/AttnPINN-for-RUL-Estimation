@@ -1,4 +1,4 @@
-# AttnPINN-for-RUL-Estimation
+# AttnPINN for RUL Estimation
 **[English](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation)**    **[简体中文](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/tree/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)**
 
 
