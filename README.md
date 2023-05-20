@@ -72,69 +72,7 @@ Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/s
 e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|**1554**|32.3K
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
 AttnPINN[(proposed framwork)]()|**18.37**|2059|**986**
-## Parameters of Model
-```
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-MultiheadAttention-1  [[-1, 1, 14], [-1, 2, 2]]               0
-         LayerNorm-2                [-1, 1, 14]              28
-            Linear-3                [-1, 1, 14]             210
-              ReLU-4                [-1, 1, 14]               0
-            Linear-5                 [-1, 1, 3]              45
-================================================================
-Total params: 283
-Trainable params: 283
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.00
-Params size (MB): 0.00
-Estimated Total Size (MB): 0.00
-----------------------------------------------------------------
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Linear-1                [-1, 1, 10]              50
-              Tanh-2                [-1, 1, 10]               0
-            Linear-3                [-1, 1, 10]             110
-              Tanh-4                [-1, 1, 10]               0
-            Linear-5                [-1, 1, 10]             110
-              Tanh-6                [-1, 1, 10]               0
-            Linear-7                [-1, 1, 10]             110
-              Tanh-8                [-1, 1, 10]               0
-            Linear-9                [-1, 1, 10]             110
-             Tanh-10                [-1, 1, 10]               0
-           Linear-11                 [-1, 1, 6]              66
-================================================================
-Total params: 556
-Trainable params: 556
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.00
-Params size (MB): 0.00
-Estimated Total Size (MB): 0.00
-----------------------------------------------------------------
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-MultiheadAttention-1  [[-1, 1, 10], [-1, 2, 2]]               0
-         LayerNorm-2                [-1, 1, 10]              20
-            Linear-3                [-1, 1, 10]             110
-              ReLU-4                [-1, 1, 10]               0
-            Linear-5                 [-1, 1, 1]              11
-================================================================
-Total params: 141
-Trainable params: 141
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.00
-Params size (MB): 0.00
-Estimated Total Size (MB): 0.00
-----------------------------------------------------------------
-```
+
 ## Citation
 If you find this work useful for your research, please cite:
 [![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
