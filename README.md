@@ -70,8 +70,8 @@ GCU-Transformer[(Mo et al.,2021)](https://link.springer.com/article/10.1007/s108
 MCLSTM[(Sheng et al., 2021)](https://www.sciencedirect.com/science/article/pii/S0951832021004439)|23.81|4826|N/A
 Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/science/article/pii/S0951832022000102)|19.86|1741|N/A
 e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|**1554**|32.3K
-PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|1,066
-AttnPINN[(proposed framwork)]()|**18.37**|2059|**986**
+PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**
+AttnPINN[(proposed framwork)]()|**18.37**|2059|2,260
 
 ## Citation
 If you find this work useful for your research, please cite:
