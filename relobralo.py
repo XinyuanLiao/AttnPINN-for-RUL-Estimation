@@ -1,6 +1,7 @@
 import torch
 
 
+# Adaptive balancing of two loss terms
 def relobralo(loss_u, loss_f, alpha, l0, l1, lam, T=0.1, rho=0):
     alpha = alpha
     losses = [loss_u, loss_f]
