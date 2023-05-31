@@ -73,7 +73,3 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**
 AttnPINN[(proposed framework)]()|**18.37**|2059|2,260
 
-## Citation
-If you find this work useful for your research, please cite:
-[![](https://img.shields.io/badge/Doi-10....-red.svg)](https://www.zhihu.com/question/375794498/answer/2664899074)
-
