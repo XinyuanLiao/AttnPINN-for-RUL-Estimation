@@ -73,3 +73,15 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**
 AttnPINN[(proposed framework)]()|**18.37**|2059|2,260
 
+##Cite this repository
+Please, cite this repository using:
+```
+@misc{2023_AttnPINN,
+    author    = {Xinyuan Liao, Shaowei Chen, Pengfei Wen, and Shuai Zhao},
+    title     = {AttnPINN for RUL Estimation},
+    month     = May,
+    year      = 2023,
+    url       = {[https://github.com/PML-UCF/pinn](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation)}
+    }
+```
+
