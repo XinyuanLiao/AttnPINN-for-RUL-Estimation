@@ -81,7 +81,7 @@ Please, cite this repository using:
     title     = {AttnPINN for RUL Estimation},
     month     = May,
     year      = 2023,
-    url       = {[https://github.com/PML-UCF/pinn](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation)}
+    url       = {https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation}
     }
 ```
 
