@@ -13,7 +13,7 @@ from pytorchtools import EarlyStopping
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-# x NN
+# x-NN for feature extraction
 class xNN(nn.Module):
     def __init__(self, input_dim, hidden_dim):
         super(xNN, self).__init__()
@@ -53,6 +53,7 @@ class DeepHPM(nn.Module):
         return self.Dense2(x1)
 
 
+# multilayer perceptron for mapping hidden states to six RUL predictions
 class MLP(nn.Module):
     def __init__(self, input_dim):
         super(MLP, self).__init__()
@@ -82,10 +83,13 @@ class MLP(nn.Module):
 
 class PINN:
     def __init__(self, X, RUL, fau, X_test, RUL_test, hidden_dim, derivatives_order, lr, batch_size, coef):
+        # train set
         self.X = torch.tensor(X[0:49072, :], dtype=torch.float32).to(device)
         self.RUL = torch.tensor(RUL[0:49072], dtype=torch.float32).to(device)
+        # valid set
         self.X_valid = torch.tensor(X[49072:, :], dtype=torch.float32).to(device)
         self.RUL_valid = torch.tensor(RUL[49072:], dtype=torch.float32).to(device)
+        # test set
         self.X_test = torch.tensor(X_test, dtype=torch.float32).to(device)
         self.RUL_test = torch.tensor(RUL_test, dtype=torch.float32).to(device)
         self.fau = fau
@@ -212,6 +216,7 @@ class PINN:
                 break  # Jump out of the iteration and end the training
         self.predict()
 
+    # predict the test set and plot it
     def predict(self):
         MSE = nn.MSELoss()
         # The network with the best read validation set performance
@@ -255,6 +260,7 @@ class PINN:
         plt.legend()
         plt.show()
 
+    # plot the train set processed by x-NN in the hidden state space
     def plot_Train(self):
         self.xnn.load_state_dict(torch.load('./Result/xNN.pth'))
         self.mlp.load_state_dict(torch.load('./Result/MLP.pth'))
@@ -275,6 +281,7 @@ class PINN:
         pred, h = self.net_u(self.X_test[:, 0:-1], self.X_test[:, -1].reshape(-1, 1))
         ph.Plot3D(hidden_state=h.cpu().detach().numpy(), RUL=pred.cpu().detach().numpy())
 
+    # plot the failure mode in the hidden state space
     def plot_Fa(self):
         self.xnn.load_state_dict(torch.load('./Result/xNN.pth'))
         self.mlp.load_state_dict(torch.load('./Result/MLP.pth'))
