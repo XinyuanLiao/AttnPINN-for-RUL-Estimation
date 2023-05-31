@@ -76,11 +76,11 @@ AttnPINN[(proposed framework)]()|**18.37**|2059|2,260
 Please, cite this repository using:
 ```
 @misc{2023_AttnPINN,
-    author    = {Xinyuan Liao, Shaowei Chen, Pengfei Wen, and Shuai Zhao},
-    title     = {AttnPINN for RUL Estimation},
-    month     = May,
-    year      = 2023,
-    url       = {https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation}
+    author = {Xinyuan Liao, Shaowei Chen, Pengfei Wen, and Shuai Zhao},
+    title = {AttnPINN for RUL Estimation},
+    month = May,
+    year = 2023,
+    url = {https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation}
     }
 ```
 
