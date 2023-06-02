@@ -1,6 +1,7 @@
 **[English](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation)**    **[简体中文](https://github.com/XinyuanLiao/AttnPINN-for-RUL-Estimation/tree/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)**
 
 ![SourceForge Platform](https://img.shields.io/sourceforge/platform/python?color=python&label=python&logo=python)
+![](https://img.shields.io/hexpm/l/plug)
 # AttnPINN for RUL Estimation
 This repository includes the code and data for the paper "_**Remaining useful life with self-attention assisted physics-informed neural network**_"
 ## Abstract
