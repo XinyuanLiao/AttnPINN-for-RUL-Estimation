@@ -29,8 +29,3 @@ if __name__ == '__main__':
     pinn = PINN.PINN(x, u, fau, X_test, u_test, hidden_dim=3, derivatives_order=2, lr=0.001, batch_size=128, coef=100)
     # pinn.train(1000)
     pinn.predict()
-    # pinn.plotUnit(u_i, x_i, t_i)
-    # pinn.plot_Train()
-    # pinn.plot_Valid()
-    # pinn.plot_Test()
-    # pinn.plot_Fa()
