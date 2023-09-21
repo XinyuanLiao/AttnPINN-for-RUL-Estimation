@@ -62,16 +62,17 @@ It: 9,   Valid_RUL_RMSE: 18.27
 ```
 
 ## Comparisons with State-of-the-art Methods
-|Method|RMSE|Score|Parameters|
-|-|-|-|-|
-|DCNN[(Li et al., 2018)](https://www.sciencedirect.com/science/article/pii/S0951832017307779)|23.31|12466|72.7K|
-RNN-Autoencoder[(Yu et al.. 2020)](https://www.sciencedirect.com/science/article/pii/S0951832019307902)|22.15|2901|378.0K
-GCU-Transformer[(Mo et al.,2021)](https://link.springer.com/article/10.1007/s10845-021-01750-x)|24.86|N/A|399.7K
-MCLSTM[(Sheng et al., 2021)](https://www.sciencedirect.com/science/article/pii/S0951832021004439)|23.81|4826|N/A
-Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/science/article/pii/S0951832022000102)|19.86|1741|N/A
-e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|**1554**|32.3K
-PDE-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**
-AttnPINN[(proposed framework)]()|**18.37**|2059|2,260
+|Method|RMSE|Score|Parameters|FLOPs|
+|-|-|-|-|-|
+|DCNN[(Li et al., 2018)](https://www.sciencedirect.com/science/article/pii/S0951832017307779)|23.31|12466|35.05k|174.76k
+RNN-Autoencoder[(Yu et al.. 2020)](https://www.sciencedirect.com/science/article/pii/S0951832019307902)|22.15|2901|378.0K|N/A
+GCU-Transformer[(Mo et al.,2021)](https://link.springer.com/article/10.1007/s10845-021-01750-x)|24.86|N/A|399.7K|393.39
+Double attention-Transformer[(Liu et al., 2022)](https://www.sciencedirect.com/science/article/pii/S0951832022000102)|19.86|1741|N/A|N/A
+e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/9905797/)|20.80|1554|32.3K|N/A
+CNN-BiLSTM-3DAttention[(You et al., 2023)](https://ieeexplore.ieee.org/abstract/document/10190349)|20.24|1710|151.9k|170.3k
+MTSTAN[(Li et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1474034623000265)|18.85|**1446**|N/A|N/A
+PINN-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**|N/A
+AttnPINN[(proposed framework)]()|**18.37**|2059|2,260|**1728**
 
 ## Cite Repository
 Please, cite this repository using:
