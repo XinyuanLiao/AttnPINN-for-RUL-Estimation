@@ -77,7 +77,7 @@ PINN-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9
 AttnPINN[(proposed framework)](https://www.sciencedirect.com/science/article/pii/S1474034623003233?dgcid=author)|**18.37**|2059|2,260|**1728**
 
 ## Cite Repository
-Please, cite this repository using:
+Please, cite the paper using:
 ```
 @article{LIAO2023102195,
 title = {Remaining useful life with self-attention assisted physics-informed neural network},
