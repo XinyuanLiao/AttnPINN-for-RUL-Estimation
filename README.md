@@ -1,7 +1,7 @@
 ![SourceForge Platform](https://img.shields.io/sourceforge/platform/python?color=python&label=python&logo=python)
 ![](https://img.shields.io/hexpm/l/plug)
 # AttnPINN for RUL Estimation
-This repository includes the code and data for the paper "_**[Remaining useful life with self-attention assisted physics-informed neural network](https://www.sciencedirect.com/science/article/pii/S1474034623003233?dgcid=author)**_"
+This repository includes the code and data for the paper "_**[Remaining useful life with self-attention assisted physics-informed neural network](https://doi.org/10.1016/j.aei.2023.102195)**_"
 
 ## Dataset
 This paper just evaluated the FD004 sub-dataset and the whole dataset can be found [**here**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/).
@@ -74,7 +74,7 @@ e-RULENet[(Natsumeda, 2022)](https://ieeexplore.ieee.org/abstract/document/99057
 CNN-BiLSTM-3DAttention[(You et al., 2023)](https://ieeexplore.ieee.org/abstract/document/10190349)|20.24|1710|151.9k|170.3k
 MTSTAN[(Li et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1474034623000265)|18.85|**1446**|N/A|N/A
 PINN-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**|N/A
-AttnPINN[(proposed framework)](https://www.sciencedirect.com/science/article/pii/S1474034623003233?dgcid=author)|**18.37**|2059|2,260|**1728**
+AttnPINN[(proposed framework)](https://doi.org/10.1016/j.aei.2023.102195)|**18.37**|2059|2,260|**1728**
 
 ## Cite Repository
 Please, cite the paper using:
