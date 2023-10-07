@@ -79,16 +79,14 @@ AttnPINN[(proposed framework)](https://doi.org/10.1016/j.aei.2023.102195)|**18.3
 ## Cite Repository
 Please, cite the paper using:
 ```
-@article{LIAO2023102195,
-title = {Remaining useful life with self-attention assisted physics-informed neural network},
-journal = {Advanced Engineering Informatics},
-volume = {58},
-pages = {102195},
-year = {2023},
-issn = {1474-0346},
-doi = {https://doi.org/10.1016/j.aei.2023.102195},
-url = {https://www.sciencedirect.com/science/article/pii/S1474034623003233},
-author = {Xinyuan Liao and Shaowei Chen and Pengfei Wen and Shuai Zhao}
+@article{liao2023remaining,
+  title={Remaining useful life with self-attention assisted physics-informed neural network},
+  author={Liao, Xinyuan and Chen, Shaowei and Wen, Pengfei and Zhao, Shuai},
+  journal={Advanced Engineering Informatics},
+  volume={58},
+  pages={102195},
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
