@@ -1,5 +1,5 @@
 <div align="center">
-<h1>AttnPINN for RUL EstimationAttnPINN for RUL Estimation</h1>
+<h1>AttnPINN for RUL Estimation</h1>
 
 ![Static Badge](https://img.shields.io/hexpm/l/plug)
 ![Static Badge](https://img.shields.io/badge/Language-Python_|_PyTorch-green)
