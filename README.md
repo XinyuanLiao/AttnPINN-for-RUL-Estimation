@@ -1,6 +1,13 @@
-![SourceForge Platform](https://img.shields.io/sourceforge/platform/python?color=python&label=python&logo=python)
-![](https://img.shields.io/hexpm/l/plug)
-# AttnPINN for RUL Estimation
+<div align="center">
+<h1>AttnPINN for RUL EstimationAttnPINN for RUL Estimation</h1>
+
+![Static Badge](https://img.shields.io/hexpm/l/plug)
+![Static Badge](https://img.shields.io/badge/Language-Python_|_PyTorch-green)
+![Static Badge](https://img.shields.io/badge/Platform-Win_|_Mac_|_Linux-pink)
+![Static Badge](https://img.shields.io/badge/DOI-10.1016/j.aei.2023.102195-red)
+</div>
+
+
 This repository includes the code and data for the paper "_**[Remaining useful life with self-attention assisted physics-informed neural network](https://doi.org/10.1016/j.aei.2023.102195)**_"
 
 ## Dataset
@@ -75,6 +82,11 @@ CNN-BiLSTM-3DAttention[(You et al., 2023)](https://ieeexplore.ieee.org/abstract/
 MTSTAN[(Li et al., 2023)](https://www.sciencedirect.com/science/article/pii/S1474034623000265)|18.85|**1446**|N/A|N/A
 PINN-PHM[(Cofre-Martel et al., 2021)](https://www.hindawi.com/journals/sv/2021/9937846/)|25.58|N/A|**1,066**|N/A
 AttnPINN[(proposed framework)](https://doi.org/10.1016/j.aei.2023.102195)|**18.37**|2059|2,260|**1728**
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=XinyuanLiao/AttnPINN-for-RUL-Estimation&type=Date)](https://star-history.com/#XinyuanLiao/AttnPINN-for-RUL-Estimation&Date)
+
 
 ## Cite Repository
 Please, cite the paper using:
