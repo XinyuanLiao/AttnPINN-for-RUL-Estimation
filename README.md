@@ -4,7 +4,7 @@
 ![Static Badge](https://img.shields.io/hexpm/l/plug)
 ![Static Badge](https://img.shields.io/badge/Language-Python_|_PyTorch-green)
 ![Static Badge](https://img.shields.io/badge/Platform-Win_|_Mac_|_Linux-pink)
-![Static Badge](https://img.shields.io/badge/DOI-10.1016/j.aei.2023.102195-red)
+[![Static Badge](https://img.shields.io/badge/DOI-10.1016/j.aei.2023.102195-red)](https://doi.org/10.1016/j.aei.2023.102195)
 </div>
 
 
